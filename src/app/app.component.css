@@ -1,0 +1,12 @@
+nav {
+    height: 30px;
+    background-color: #167171;
+    padding: 10px;
+    font-size: 1.5rem;
+    color: wheat;
+}
+
+.file-browser {
+    height: 70%;
+    padding: 50px 150px;
+}

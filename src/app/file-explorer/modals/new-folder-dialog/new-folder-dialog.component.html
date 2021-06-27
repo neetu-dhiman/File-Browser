@@ -1,0 +1,15 @@
+<h1 mat-dialog-title *ngIf="!itemName">Create a new {{type}}</h1>
+<h1 mat-dialog-title *ngIf="itemName">Rename {{type}}</h1>
+
+<mat-dialog-content>
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="{{type}} Name" [(ngModel)]="itemName" />
+  </mat-form-field>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+  <button mat-raised-button mat-dialog-close class="cancel">Cancel</button>
+  <button mat-raised-button [mat-dialog-close]="itemName" class="primary">
+    OK
+  </button>
+</mat-dialog-actions>
